@@ -12,7 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
-public class AlbumDTO {
+public class DetailedAlbumDTO {
     private String albumId;
     private String name;
     private String artist;
