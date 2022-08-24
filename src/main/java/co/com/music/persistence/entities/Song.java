@@ -5,7 +5,7 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -16,11 +16,11 @@ import java.time.LocalTime;
 @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
 public class Song {
     @Id
-    private String idSong;
+    private String songId;
     private String name;
     private String lyricsBy;
     private String producedBy;
     private String arrangedBy;
-    private LocalTime timestamp;
+    private LocalDateTime timestamp;
 
 }

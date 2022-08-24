@@ -5,8 +5,7 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalTime;
-import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -17,9 +16,9 @@ import java.util.ArrayList;
 @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
 public class Playlist {
     @Id
-    private String idPlaylist;
+    private String playlistId;
     private String name;
     private String username;
-    private ArrayList<Song> songs;
-    private LocalTime duration;
+    private List<Song> songs;
+    private Double durationInMinutes;
 }

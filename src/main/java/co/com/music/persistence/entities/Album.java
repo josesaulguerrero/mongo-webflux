@@ -6,7 +6,9 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.ArrayList;
+import java.time.LocalDate;
+
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -18,10 +20,10 @@ import java.util.ArrayList;
 @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
 public class Album {
     @Id
-    private String idAlbum;
+    private String albumId;
     private String name;
     private String artist;
-    private Integer yearRelease;
-    private ArrayList<Song> songs=new ArrayList<>();
+    private LocalDate releaseYear;
+    private List<Song> songs;
 
 }
