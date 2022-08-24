@@ -1,6 +1,6 @@
 package co.com.music.web.controllers;
 
-import co.com.music.domain.dto.album.AlbumDTO;
+import co.com.music.domain.dto.album.DetailedAlbumDTO;
 import co.com.music.domain.service.implementation.AlbumServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ public class AlbumResource {
 
     //GET
     @GetMapping("/findAlbum/{id}")
-    private Mono<ResponseEntity<AlbumDTO>> getAlbumById(@PathVariable String id){
+    private Mono<ResponseEntity<DetailedAlbumDTO>> getAlbumById(@PathVariable String id){
         return albumService.findAlbumById(id);
     }
 }

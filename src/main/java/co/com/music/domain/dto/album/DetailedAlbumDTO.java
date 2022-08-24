@@ -16,6 +16,6 @@ public class DetailedAlbumDTO {
     private String albumId;
     private String name;
     private String artist;
-    private Integer releaseYear;
+    private String releaseYear;
     private List<SongDTO> songs;
 }

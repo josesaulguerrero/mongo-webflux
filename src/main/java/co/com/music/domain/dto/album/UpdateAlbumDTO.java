@@ -1,4 +1,5 @@
 package co.com.music.domain.dto.album;
 
-public class UpdateAlbumDTO {
+public class UpdateAlbumDTO extends CreateAlbumDTO {
+    protected String songId;
 }
