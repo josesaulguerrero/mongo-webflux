@@ -1,10 +1,10 @@
-package ec.com.reactive.music;
+package co.com.music;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ReactiveMusicExampleApplicationTests {
+class MusicApplicationTests {
 
 	@Test
 	void contextLoads() {

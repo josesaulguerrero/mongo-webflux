@@ -1,7 +1,7 @@
-package ec.com.reactive.music.web;
+package co.com.music.web.controllers;
 
-import ec.com.reactive.music.domain.dto.AlbumDTO;
-import ec.com.reactive.music.service.impl.AlbumServiceImpl;
+import co.com.music.domain.dto.AlbumDTO;
+import co.com.music.domain.service.implementation.AlbumServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

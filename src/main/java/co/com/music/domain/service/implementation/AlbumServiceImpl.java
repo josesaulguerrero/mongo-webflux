@@ -1,9 +1,9 @@
-package ec.com.reactive.music.service.impl;
+package co.com.music.domain.service.implementation;
 
-import ec.com.reactive.music.domain.dto.AlbumDTO;
-import ec.com.reactive.music.domain.entities.Album;
-import ec.com.reactive.music.repository.IAlbumRepository;
-import ec.com.reactive.music.service.IAlbumService;
+import co.com.music.domain.dto.AlbumDTO;
+import co.com.music.persistence.entities.Album;
+import co.com.music.persistence.repository.IAlbumRepository;
+import co.com.music.domain.service.IAlbumService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

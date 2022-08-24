@@ -1,4 +1,4 @@
-package ec.com.reactive.music.config;
+package co.com.music.infrastructure.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

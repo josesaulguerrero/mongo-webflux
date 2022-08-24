@@ -1,4 +1,4 @@
-package ec.com.reactive.music.domain.dto;
+package co.com.music.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;

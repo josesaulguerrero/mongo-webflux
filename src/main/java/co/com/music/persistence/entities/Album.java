@@ -1,4 +1,4 @@
-package ec.com.reactive.music.domain.entities;
+package co.com.music.persistence.entities;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 @Setter
 @Getter
 @Builder(toBuilder = true)
-@Document(collection = "Album")
+@Document(collection = "albums")
 @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
 public class Album {
     @Id
