@@ -1,7 +1,6 @@
 package co.com.music.domain.dto.playlist;
 
-import co.com.music.domain.dto.song.SongDTO;
-import com.fasterxml.jackson.annotation.JsonFormat;
+import co.com.music.domain.dto.song.DetailedSongDTO;
 import lombok.*;
 
 import java.util.List;
@@ -11,12 +10,11 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
-@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
 public class PlaylistDTO {
     private String playlistId;
     private String name;
     private String username;
-    private List<SongDTO> songs;
+    private List<DetailedSongDTO> songs;
     private Double duration;
 }
 

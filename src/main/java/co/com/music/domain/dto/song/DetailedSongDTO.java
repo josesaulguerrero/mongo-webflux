@@ -1,6 +1,5 @@
 package co.com.music.domain.dto.song;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -11,8 +10,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Getter
 @Setter
-@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
-public class SongDTO {
+public class DetailedSongDTO {
     private String songId;
     private String name;
     private String lyricsBy;

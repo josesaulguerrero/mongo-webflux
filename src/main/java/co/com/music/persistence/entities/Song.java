@@ -1,6 +1,5 @@
 package co.com.music.persistence.entities;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -13,7 +12,6 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @Document(collection = "songs")
-@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
 public class Song {
     @Id
     private String songId;
