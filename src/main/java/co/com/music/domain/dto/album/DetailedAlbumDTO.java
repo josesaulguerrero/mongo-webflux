@@ -5,15 +5,14 @@ import lombok.*;
 
 import java.util.List;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
-@Setter
+@ToString
+@EqualsAndHashCode
+@AllArgsConstructor
 public class DetailedAlbumDTO {
-    private String albumId;
-    private String name;
-    private String artist;
-    private String releaseYear;
-    private List<DetailedSongDTO> songs;
+    private final String albumId;
+    private final String name;
+    private final String artist;
+    private final String releaseYear;
+    private final List<DetailedSongDTO> songs;
 }
