@@ -1,5 +1,6 @@
-package co.com.music.domain.dto;
+package co.com.music.domain.dto.playlist;
 
+import co.com.music.domain.dto.song.SongDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 

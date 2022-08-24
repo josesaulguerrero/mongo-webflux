@@ -1,6 +1,6 @@
 package co.com.music.web.controllers;
 
-import co.com.music.domain.dto.AlbumDTO;
+import co.com.music.domain.dto.album.AlbumDTO;
 import co.com.music.domain.service.implementation.AlbumServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
