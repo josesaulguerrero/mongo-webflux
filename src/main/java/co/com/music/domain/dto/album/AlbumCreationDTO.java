@@ -9,7 +9,7 @@ import java.time.Year;
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class CreateAlbumDTO {
+public class AlbumCreationDTO {
     protected final String name;
     protected final String artist;
     protected final Year releaseYear;

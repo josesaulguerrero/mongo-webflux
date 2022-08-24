@@ -5,10 +5,10 @@ import lombok.*;
 @Getter
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class UpdateSongDTO extends CreateSongDTO {
+public class SongUpdateDTO extends SongCreationDTO {
     protected final String songId;
 
-    public UpdateSongDTO(String name, String lyricsBy, String producedBy, String arrangedBy, String songId) {
+    public SongUpdateDTO(String name, String lyricsBy, String producedBy, String arrangedBy, String songId) {
         super(name, lyricsBy, producedBy, arrangedBy);
         this.songId = songId;
     }

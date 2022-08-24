@@ -8,10 +8,10 @@ import java.time.Year;
 @Setter
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class UpdateAlbumDTO extends CreateAlbumDTO {
+public class AlbumUpdateDTO extends AlbumCreationDTO {
     protected final String albumId;
 
-    public UpdateAlbumDTO(String name, String artist, Year releaseYear, String albumId) {
+    public AlbumUpdateDTO(String name, String artist, Year releaseYear, String albumId) {
         super(name, artist, releaseYear);
         this.albumId = albumId;
     }

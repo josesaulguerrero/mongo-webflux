@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class DetailedSongDTO {
+public class SongDetailDTO {
     private final String songId;
     private final String name;
     private final String lyricsBy;
