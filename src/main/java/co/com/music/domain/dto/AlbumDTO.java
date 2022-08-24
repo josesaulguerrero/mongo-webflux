@@ -3,8 +3,7 @@ package co.com.music.domain.dto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
-import java.util.ArrayList;
-import java.util.UUID;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -13,10 +12,9 @@ import java.util.UUID;
 @Setter
 @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
 public class AlbumDTO {
-    private String idAlbum = UUID.randomUUID().toString().substring(0, 10);
+    private String albumId;
     private String name;
     private String artist;
-    private Integer yearRelease;
-    private ArrayList<SongDTO> songs=new ArrayList<>();
-
+    private Integer releaseYear;
+    private List<SongDTO> songs;
 }

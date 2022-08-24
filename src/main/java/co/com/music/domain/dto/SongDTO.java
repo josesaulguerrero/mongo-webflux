@@ -3,8 +3,8 @@ package co.com.music.domain.dto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
-import java.time.LocalTime;
-import java.util.UUID;
+import java.time.LocalDateTime;
+
 
 @Data
 @NoArgsConstructor
@@ -13,11 +13,10 @@ import java.util.UUID;
 @Setter
 @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm:ss")
 public class SongDTO {
-    private String idSong= UUID.randomUUID().toString().substring(0, 10);
+    private String songId;
     private String name;
     private String lyricsBy;
     private String producedBy;
     private String arrangedBy;
-    private LocalTime timestamp;
-
+    private LocalDateTime timestamp;
 }
