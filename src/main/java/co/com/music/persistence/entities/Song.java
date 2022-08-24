@@ -20,5 +20,4 @@ public class Song {
     private String producedBy;
     private String arrangedBy;
     private LocalDateTime timestamp;
-
 }

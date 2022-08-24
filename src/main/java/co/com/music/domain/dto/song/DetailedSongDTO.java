@@ -5,16 +5,15 @@ import lombok.*;
 import java.time.LocalDateTime;
 
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
-@Setter
+@ToString
+@EqualsAndHashCode
+@AllArgsConstructor
 public class DetailedSongDTO {
-    private String songId;
-    private String name;
-    private String lyricsBy;
-    private String producedBy;
-    private String arrangedBy;
-    private LocalDateTime timestamp;
+    private final String songId;
+    private final String name;
+    private final String lyricsBy;
+    private final String producedBy;
+    private final String arrangedBy;
+    private final LocalDateTime timestamp;
 }
