@@ -55,6 +55,9 @@ public class SongServiceImpl implements ISongService {
     @Override
     public Mono<Song> delete(String id) {
         return this.findById(id)
-                .doOnNext(this.songRepository::delete);
+                .flatMap(
+                        song -> this.songRepository.delete(song)
+                                .thenReturn(song)
+                );
     }
 }
