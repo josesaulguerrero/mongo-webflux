@@ -35,7 +35,7 @@ public class AlbumController {
 
     @PostMapping("post")
     public ResponseEntity<Mono<AlbumDetailDTO>> post(@RequestBody AlbumSaveDTO dto) {
-        Album album = this.albumMapper.creationDTOToEntity(dto);
+        Album album = this.albumMapper.saveDTOToEntity(dto);
         Mono<AlbumDetailDTO> mappedDTO = this.albumService.save(album)
                 .map(this.albumMapper::entityToDetailDTO);
         return new ResponseEntity<>(mappedDTO, HttpStatus.CREATED);
@@ -43,7 +43,7 @@ public class AlbumController {
 
     @PutMapping("update/{id}")
     public ResponseEntity<Mono<AlbumDetailDTO>> put(@PathVariable("id") String id, @RequestBody AlbumSaveDTO dto) {
-        Album album = this.albumMapper.creationDTOToEntity(dto);
+        Album album = this.albumMapper.saveDTOToEntity(dto);
         album.setAlbumId(id);
         Mono<AlbumDetailDTO> mappedDTO = this.albumService.update(album)
                 .map(this.albumMapper::entityToDetailDTO);

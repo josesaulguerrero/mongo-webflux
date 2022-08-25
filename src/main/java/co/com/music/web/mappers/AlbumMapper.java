@@ -9,7 +9,7 @@ import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface AlbumMapper {
-    Album creationDTOToEntity(AlbumSaveDTO dto);
+    Album saveDTOToEntity(AlbumSaveDTO dto);
 
     AlbumDetailDTO entityToDetailDTO(Album entity);
     List<AlbumDetailDTO> entitiesToDetailDTOs(List<Album> entities);
