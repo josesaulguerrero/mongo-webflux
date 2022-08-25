@@ -1,6 +1,6 @@
 package co.com.music.web.controllers;
 
-import co.com.music.domain.dto.album.AlbumCreationDTO;
+import co.com.music.domain.dto.album.AlbumSaveDTO;
 import co.com.music.domain.dto.album.AlbumDetailDTO;
 import co.com.music.domain.service.implementation.AlbumServiceImpl;
 import co.com.music.persistence.entities.Album;
@@ -34,7 +34,7 @@ public class AlbumController {
     }
 
     @PostMapping("post")
-    public ResponseEntity<Mono<AlbumDetailDTO>> post(@RequestBody AlbumCreationDTO dto) {
+    public ResponseEntity<Mono<AlbumDetailDTO>> post(@RequestBody AlbumSaveDTO dto) {
         Album album = this.albumMapper.creationDTOToEntity(dto);
         Mono<AlbumDetailDTO> mappedDTO = this.albumService.save(album)
                 .map(this.albumMapper::entityToDetailDTO);
@@ -42,7 +42,7 @@ public class AlbumController {
     }
 
     @PutMapping("update/{id}")
-    public ResponseEntity<Mono<AlbumDetailDTO>> put(@PathVariable("id") String id, @RequestBody AlbumCreationDTO dto) {
+    public ResponseEntity<Mono<AlbumDetailDTO>> put(@PathVariable("id") String id, @RequestBody AlbumSaveDTO dto) {
         Album album = this.albumMapper.creationDTOToEntity(dto);
         album.setAlbumId(id);
         Mono<AlbumDetailDTO> mappedDTO = this.albumService.update(album)

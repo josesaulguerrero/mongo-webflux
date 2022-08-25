@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class AlbumCreationDTO {
+public class AlbumSaveDTO {
     protected final String name;
     protected final String artist;
     protected final LocalDate releaseYear;
