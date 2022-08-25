@@ -3,6 +3,7 @@ package co.com.music.domain.dto.album;
 import co.com.music.domain.dto.song.SongDetailDTO;
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -14,5 +15,5 @@ public class AlbumDetailDTO {
     private final String name;
     private final String artist;
     private final String releaseYear;
-    private final List<SongDetailDTO> songs;
+    private final List<SongDetailDTO> songs = new ArrayList<>();
 }
