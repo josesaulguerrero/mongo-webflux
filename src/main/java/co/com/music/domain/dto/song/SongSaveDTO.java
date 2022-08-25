@@ -6,7 +6,7 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 @AllArgsConstructor
-public class SongCreationDTO {
+public class SongSaveDTO {
     protected final String name;
     protected final String lyricsBy;
     protected final String producedBy;
