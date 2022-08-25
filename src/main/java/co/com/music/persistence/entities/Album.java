@@ -6,8 +6,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -22,5 +20,4 @@ public class Album {
     private String name;
     private String artist;
     private LocalDate releaseYear;
-    private List<Song> songs = new ArrayList<>();
 }
