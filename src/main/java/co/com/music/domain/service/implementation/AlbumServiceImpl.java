@@ -52,10 +52,10 @@ public class AlbumServiceImpl implements IAlbumService {
     @Transactional
     public Mono<Album> delete(String id) {
         return this.findById(id)
-                .doOnNext(
+                .flatMap(
                         album -> this.albumRepository
                                 .deleteById(album.getAlbumId())
-                                .subscribe()
+                                .thenReturn(album)
                 );
     }
 }
