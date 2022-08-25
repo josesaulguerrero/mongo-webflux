@@ -2,6 +2,7 @@ package co.com.music.domain.dto.album;
 
 import lombok.*;
 
+import java.time.LocalDate;
 import java.time.Year;
 
 @Getter
@@ -11,7 +12,7 @@ import java.time.Year;
 public class AlbumUpdateDTO extends AlbumCreationDTO {
     protected final String albumId;
 
-    public AlbumUpdateDTO(String name, String artist, Year releaseYear, String albumId) {
+    public AlbumUpdateDTO(String name, String artist, LocalDate releaseYear, String albumId) {
         super(name, artist, releaseYear);
         this.albumId = albumId;
     }

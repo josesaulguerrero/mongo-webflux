@@ -5,7 +5,7 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.Year;
+import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -20,6 +20,6 @@ public class Album {
     private String albumId;
     private String name;
     private String artist;
-    private Year releaseYear;
+    private LocalDate releaseYear;
     private List<Song> songs;
 }
