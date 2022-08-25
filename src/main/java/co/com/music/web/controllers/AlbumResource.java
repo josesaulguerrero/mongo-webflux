@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("albums")
 @AllArgsConstructor
-public class AlbumController {
+public class AlbumResource {
     private final AlbumServiceImpl albumService;
     private final AlbumMapper albumMapper;
 
